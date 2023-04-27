@@ -2,10 +2,12 @@
 
 > The goal of this project is to let users play chess against chatbots with unique personalities powered by modern large language models.
 
-## Installation
+## Setup
 - Note: The AI chatbots are still under development
 - Download or clone this repository
-- Open index.html in your web browser
+- Install NodeJS and NPM
+- Install dependencies with `npm install`
+- Run the server with `npx live-server --port=N` where N is the port number you want to use
 
 ## Short-Term Roadmap
 - [ ] Provide options to use local host port or OpenAI API key
