@@ -7,10 +7,13 @@
 - Download or clone this repository
 - Install NodeJS and NPM
 - Install dependencies with `npm install`
+- Create .env file following .env.template format containing your local host or OpenAI information
+- LocalAI is the recommended local host option (https://github.com/go-skynet/LocalAI)
+- davinci is the recommended OpenAI API model option
 - Run the server with `npx live-server --port=N` where N is the port number you want to use
 
 ## Short-Term Roadmap
-- [ ] Provide options to use local host port or OpenAI API key
+- [x] Provide options to use local host port or OpenAI API key
 - [ ] Build function to interact with API
 - [ ] Build prompt function to turn chess event into message
 - [ ] Add user interface element to choose chatbot personality
