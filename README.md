@@ -10,7 +10,8 @@
 - Navigate to chatbots folder and create .env file following .env.template format containing your local host or OpenAI information
 - LocalAI is the recommended local host option (https://github.com/go-skynet/LocalAI) and gpt4all-j is the recommended local host model option
 - gpt-3.5-turbo is the recommended OpenAI API model option
-- Run the server with `npx live-server --port=N` where N is the port number you want to use
+- Navigate to chatbots folder and run chatbots server with 'node app.js'
+- Run the website server with `npx live-server --port=N` where N is the port number you want to use
 
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
