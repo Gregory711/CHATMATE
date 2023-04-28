@@ -14,7 +14,7 @@
 
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
-- [ ] Build function to interact with API
+- [x] Build function to interact with API
 - [ ] Build prompt function to turn chess event into message
 - [ ] Add user interface element to choose chatbot personality
 - [ ] Connect engine to prompt and use selected personality to generate message
