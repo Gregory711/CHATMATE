@@ -15,6 +15,7 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/Gregory711/CHATMATE#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "live-server": "^1.2.2"
   }
