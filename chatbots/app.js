@@ -32,6 +32,29 @@ async function chat(contents) {
             })
           };
     }
+    else {
+        options = {
+            url: 'https://api.openai.com/v1/chat/completions',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            auth: {
+                'bearer': process.env.OPENAIKEY
+            },
+            body: JSON.stringify({
+                model: process.env.OPENAIMODEL,
+                messages: [
+                    {
+                        role: 'user',
+                        content: contents
+                    }
+                ],
+                temperature: 0,
+                max_tokens: max_tokens
+            })
+        };
+    }
 
     return new Promise(function (resolve, reject) {
         request(options, (error, response, body) => {
