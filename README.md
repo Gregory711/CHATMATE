@@ -16,7 +16,7 @@
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
 - [x] Build function to interact with API
-- [ ] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
+- [x] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
 - [ ] Store in LocalStorage the last move type (e.g. quiet move) and document this
 - [ ] Create js file to create prompt IndexedDB database, add empty database to git, and document usage
 - [ ] Create npm CLI to list chatbots in prompt db and document usage
