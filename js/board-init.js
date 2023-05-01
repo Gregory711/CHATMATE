@@ -188,6 +188,8 @@ stockfish.onmessage = function(event) {
       });
 
       console.log(game.fen());
+      localStorage.setItem('chatbotTurn', game.fen());
+      localStorage.setItem('whoseTurn', 'chatbot');
 
       board.position(game.fen());
 

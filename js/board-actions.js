@@ -103,6 +103,7 @@ function loadBoard(fen, fromHistory = false) {
 
 function opponentTurn() {
 
+  localStorage.setItem('userTurn', game.fen());
   localStorage.setItem('whoseTurn', 'user');
   console.log('Opponent turn.');
 
@@ -157,7 +158,6 @@ function opponentTurn() {
       stockfish.postMessage('go depth ' + engineSkill);
     }, 500);
 
-    localStorage.setItem('whoseTurn', 'chatbot');
     startTimer();
   }
 }
