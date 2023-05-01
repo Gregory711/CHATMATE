@@ -35,6 +35,7 @@
 - [ ] Create jest test to check that stub.js function works
 - [ ] Add user interface element to choose chatbot personality
 - [ ] Display chatbot messages
+- [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots
 
 ## Long-Term Goals
