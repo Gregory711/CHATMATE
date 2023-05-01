@@ -6,6 +6,10 @@ Each subarray contains the following information:
 - The chatbot: BLANK is playing a game of chess name e.g. a cartoonish villain
 - The chatbot: Write BLANK short mocking response e.g. the villains
 
-The prompts/Chatbot.json file for each chatbot contains a 2d array containing prompts using the following metadata inserts:
+The prompts/Chatbot.json file for each chatbot contains an array containing prompts using the following metadata inserts:
 - PRONOUN1, PRONOUN2, PRONOUN3: The chatbot's pronouns e.g. he, him, his
 - NAME1, NAME2: The chatbot's name e.g. a cartoonish villain and the villains respectively
+
+e.g. NAME1 is plyaing a game of chess. One of PRONOUN3 pawns is captured. Write PRONOUN3 angry retort in the format of a tweet. 
+
+Which might translate to "A cartoonish villain is playing a game of chess. One of his pawns is captured. Write his angry retort in the format of a tweet."
