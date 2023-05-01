@@ -105,6 +105,12 @@ function opponentTurn() {
 
   localStorage.setItem('userTurn', game.fen());
   localStorage.setItem('whoseTurn', 'user');
+  priorState = localStorage.getItem('chatbotTurn');
+  if (!priorState) {
+    priorState = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'; // starting position
+  }
+  // Use fen states to determine move type e.g. capture, else quiet move if nothing else
+  localStorage.setItem('moveType', 'quiet');
   console.log('Opponent turn.');
 
   stopTimer();

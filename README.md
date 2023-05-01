@@ -17,7 +17,7 @@
 - [x] Provide options to use local host port or OpenAI API key
 - [x] Build function to interact with API
 - [x] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
-- [ ] Store in LocalStorage the last move type (e.g. quiet move) and document this
+- [x] Store in LocalStorage the last move type (e.g. quiet move) and document this
 - [ ] Create js file to create prompt IndexedDB database, add empty database to git, and document usage
 - [ ] Create npm CLI to list chatbots in prompt db and document usage
 - [ ] Add ability to list prompts for each chatbot in CLI and document usage
@@ -37,6 +37,7 @@
 - [ ] Display chatbot messages
 - [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots
+- [ ] Add other move types e.g. capture, check, checkmate, etc
 
 ## Long-Term Goals
 - [ ] Allow users to message the chatbots directly
