@@ -18,8 +18,8 @@
 - [x] Build function to interact with API
 - [x] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
 - [x] Store in LocalStorage the last move type (e.g. quiet move) and document this
-- [ ] Create js file to create prompt IndexedDB database, add empty database to git, and document usage
-- [ ] Create npm CLI to list chatbots in prompt db and document usage
+- [ ] Create js file to create prompts json file and document format
+- [ ] Create npm CLI to list chatbots in prompts file and document usage
 - [ ] Add ability to list prompts for each chatbot in CLI and document usage
 - [ ] Add ability to upload prompts for each chatbot in CLI and document usage
 - [ ] Store in LocalStorage the selected chatbot and document this
@@ -27,8 +27,8 @@
 - [ ] Create jest test to check that chat.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or throw error that server isn't working and stub isn't available
 - [ ] Create jest test to check that getResponse function works
-- [ ] Create js file to create response dataase for stubs, add empty database to git, and document usage
-- [ ] Create npm CLI to list chatbots in response db and document usage
+- [ ] Create js file to create response json file for stubs and document usage
+- [ ] Create npm CLI to list chatbots in response file and document usage
 - [ ] Add ability to list responses for each chatbot in CLI and document usage
 - [ ] Add ability to upload responses for each chatbot in CLI and document usage
 - [ ] Create stub.js function getStubResponse and add to chat.js getResponse instead of throwing error
