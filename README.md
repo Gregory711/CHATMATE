@@ -18,7 +18,7 @@
 - [x] Build function to interact with API
 - [x] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
 - [x] Store in LocalStorage the last move type (e.g. quiet move) and document this
-- [ ] Create prompts folder, metadata file, and document format
+- [x] Create prompts folder, metadata file, and document format
 - [ ] Create npm CLI to list chatbots in prompts file and document usage
 - [ ] Add ability to list prompts for each chatbot in CLI and document usage
 - [ ] Add ability to upload new chatbots in CLI and document usage
