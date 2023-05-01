@@ -13,13 +13,16 @@
 - Navigate to chatbots folder and run chatbots server with 'node app.js'
 - Run the website server with `npx live-server --port=N` where N is the port number you want to use
 
+## Developer Notes
+- Can list available chatbots with command npm run list-chatbot
+
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
 - [x] Build function to interact with API
 - [x] Store in LocalStorage whether it's the user's turn or the chatbot's turn and create file to document this
 - [x] Store in LocalStorage the last move type (e.g. quiet move) and document this
 - [x] Create prompts folder, metadata file, and document format
-- [ ] Create npm CLI to list chatbots in prompts file and document usage
+- [x] Create npm CLI to list chatbots in prompts file and document usage
 - [ ] Add ability to list prompts for each chatbot in CLI and document usage
 - [ ] Add ability to upload new chatbots in CLI and document usage
 - [ ] Add ability to upload prompts for each chatbot in CLI and document usage
