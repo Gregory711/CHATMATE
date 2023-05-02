@@ -17,7 +17,7 @@
 - Can list available chatbots with command npm run list-chatbots
 - Can list available prompts for each chatbot with command npm run list-prompts "chatbot name"
 e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm run list-prompts "Cartoon Villain"
-- Can create new chatbots with command npm run create-chatbot "chatbot name"
+- Can create new chatbots with command npm run create-chatbot "Cartoon Villain" "he,him,his" "a cartoonish villain" "the villains" as explained in chatbots/prompts-documentation.md
 - Can create new prompts for each chatbot with command npm run create-prompt "chatbot name" "prompt text"
 
 ## Short-Term Roadmap
