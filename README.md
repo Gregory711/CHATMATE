@@ -30,7 +30,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Add ability to list prompts for each chatbot in CLI and document usage
 - [x] Add ability to create new chatbots in CLI and document usage
 - [x] Add ability to create new prompts for each chatbot in CLI and document usage
-- [ ] Store in LocalStorage the selected chatbot and document this
+- [x] Store in LocalStorage the selected chatbot and document this
 - [ ] Create chat.js function to use Local Storage chatbot selection and move type to select prompt
 - [ ] Create jest test to check that chat.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or throw error that server isn't working and stub isn't available
