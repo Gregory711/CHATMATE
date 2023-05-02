@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 require("dotenv").config();
 const port = process.env.CHATBOTSPORT || 3000;
+const mode = process.env.MODE || 'stub';
 const request = require('request');
 const max_tokens = 50;
 
@@ -70,6 +71,11 @@ async function chat(contents) {
         });
     });
 }
+
+// Returns the mode set in the .env file
+app.get('/mode', (req, res) => {
+    res.send(mode);
+});
 
 app.get('/test', async (req, res) => {
     try {
