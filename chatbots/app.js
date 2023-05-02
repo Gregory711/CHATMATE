@@ -74,7 +74,7 @@ async function chat(contents) {
 
 // Returns the mode set in the .env file
 app.get('/mode', (req, res) => {
-    res.send(mode);
+    res.send({mode});
 });
 
 app.get('/test', async (req, res) => {
