@@ -18,6 +18,7 @@
 - Can list available prompts for each chatbot with command npm run list-prompts "chatbot name"
 e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm run list-prompts "Cartoon Villain"
 - Can create new chatbots with command npm run create-chatbot "chatbot name"
+- Can create new prompts for each chatbot with command npm run create-prompt "chatbot name" "prompt text"
 
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
@@ -28,7 +29,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create npm CLI to list chatbots in prompts file and document usage
 - [x] Add ability to list prompts for each chatbot in CLI and document usage
 - [x] Add ability to create new chatbots in CLI and document usage
-- [ ] Add ability to upload prompts for each chatbot in CLI and document usage
+- [x] Add ability to create new prompts for each chatbot in CLI and document usage
 - [ ] Store in LocalStorage the selected chatbot and document this
 - [ ] Create chat.js function to use Local Storage chatbot selection and move type to select prompt
 - [ ] Create jest test to check that chat.js function works

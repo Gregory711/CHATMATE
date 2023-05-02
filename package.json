@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "list-chatbots": "cross-var npx node ./chatbots/prompts/list-chatbots.js",
     "list-prompts": "cross-var npx node ./chatbots/prompts/list-prompts.js $npm_config_chatbot",
-    "create-chatbot": "cross-var npx node ./chatbots/prompts/create-chatbot.js $npm_config_chatbot"
+    "create-chatbot": "cross-var npx node ./chatbots/prompts/create-chatbot.js $npm_config_chatbot",
+    "create-prompt": "cross-var npx node ./chatbots/prompts/create-prompt.js $npm_config_chatbot $npm_config_prompt"
   },
   "repository": {
     "type": "git",
