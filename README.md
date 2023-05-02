@@ -14,7 +14,9 @@
 - Run the website server with `npx live-server --port=N` where N is the port number you want to use
 
 ## Developer Notes
-- Can list available chatbots with command npm run list-chatbot
+- Can list available chatbots with command npm run list-chatbots
+- Can list available prompts for each chatbot with command npm run list-prompts "chatbot name"
+e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm run list-prompts "Cartoon Villain"
 
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
@@ -23,7 +25,7 @@
 - [x] Store in LocalStorage the last move type (e.g. quiet move) and document this
 - [x] Create prompts folder, metadata file, and document format
 - [x] Create npm CLI to list chatbots in prompts file and document usage
-- [ ] Add ability to list prompts for each chatbot in CLI and document usage
+- [x] Add ability to list prompts for each chatbot in CLI and document usage
 - [ ] Add ability to upload new chatbots in CLI and document usage
 - [ ] Add ability to upload prompts for each chatbot in CLI and document usage
 - [ ] Store in LocalStorage the selected chatbot and document this
