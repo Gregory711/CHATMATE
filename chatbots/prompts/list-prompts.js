@@ -1,10 +1,10 @@
-const fs = require('fs');
+import fs from 'fs';
 
-// Compute the filepath based on command line parameter
-const filepath = (process.argv[2]).replace(/\s/g, '') + '.json';
+// Read in the prompts data
+const data = JSON.parse(fs.readFileSync('./chatbots/prompts/prompts.json'));
 
-// Read the prompts file
-const prompts = JSON.parse(fs.readFileSync('./chatbots/prompts/' + filepath));
+// Isolate the prompts for the given chatbot
+const prompts = data[process.argv[2]];
 
 // Iterate over the prompts and print them
 for (const prompt of prompts) {
