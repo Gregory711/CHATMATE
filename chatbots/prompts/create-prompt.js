@@ -1,17 +1,10 @@
-const fs = require('fs');
-
-// Check that the command line parameter is valid
-const filepath = (process.argv[2]).replace(/\s/g, '') + '.json';
-if (!fs.existsSync('./chatbots/prompts/' + filepath)) {
-    console.log('Invalid chatbot name');
-    process.exit(1);
-}
+import fs from 'fs';
 
 // Read the prompts file
-const prompts = JSON.parse(fs.readFileSync('./chatbots/prompts/' + filepath));
+const prompts = JSON.parse(fs.readFileSync('./chatbots/prompts/prompts.json'));
 
 // Add the new prompt to the prompts
-prompts.push(process.argv[3]);
+prompts[process.argv[2]].push(process.argv[3]);
 
 // Write the prompts file
-fs.writeFileSync('./chatbots/prompts/' + filepath, JSON.stringify(prompts));
+fs.writeFileSync('./chatbots/prompts/prompts.json', JSON.stringify(prompts));
