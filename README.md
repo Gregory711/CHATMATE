@@ -31,7 +31,9 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Add ability to create new chatbots in CLI and document usage
 - [x] Add ability to create new prompts for each chatbot in CLI and document usage
 - [x] Store in LocalStorage the selected chatbot and document this
-- [ ] Create chat.js function to use Local Storage chatbot selection and move type to select prompt
+- [ ] Refactor prompt storage to store all prompts in a single json file so they can be import by getPrompt function
+- [ ] Create chat.js function to return a random prompt for a given chatbot
+- [ ] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
 - [ ] Create jest test to check that chat.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or throw error that server isn't working and stub isn't available
 - [ ] Create jest test to check that getResponse function works
@@ -45,6 +47,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [ ] Display chatbot messages
 - [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots
+- [ ] Make prompts 2d arrays with different subarrays for different move types and document this
 - [ ] Add other move types e.g. capture, check, checkmate, etc
 
 ## Long-Term Goals
