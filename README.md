@@ -33,7 +33,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Store in LocalStorage the selected chatbot and document this
 - [x] Refactor prompt storage to store all prompts in a single json file so they can be import by getPrompt function
 - [x] Create chat.js function to return a random prompt for a given chatbot
-- [ ] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
+- [x] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
 - [ ] Create jest test to check that chat.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or throw error that server isn't working and stub isn't available
 - [ ] Create jest test to check that getResponse function works

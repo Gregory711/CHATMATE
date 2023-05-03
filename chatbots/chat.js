@@ -19,8 +19,22 @@ async function getMode() {
  * Returns a random prompt for the given chatbot
  * @param chatbot - The chatbot name getting a prompt for
  */
-function getPrompt(chatbot) {
+function getChatbotPrompt(chatbot) {
     const chatbotPrompts = prompts[chatbot];
     const prompt = chatbotPrompts[Math.floor(Math.random() * chatbotPrompts.length)];
     return prompt;
+}
+
+/**
+ * Gets a random prompt for chosen chatbot or 'Cartoon Villain' by default
+ * @returns A random prompt for the chatbot stored in localStorage or 'Cartoon Villain' if none is stored
+ */
+function getPrompt() {
+   const chatbot = localStorage.getItem('chatbot');
+    if (chatbot) {
+        return getChatbotPrompt(chatbot);
+    }
+    else {
+        return getChatbotPrompt('Cartoon Villain');
+    }
 }
