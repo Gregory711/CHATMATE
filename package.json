@@ -25,5 +25,9 @@
     "live-server": "^1.2.2",
     "request": "^2.88.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-localstorage-mock": "^2.4.26"
+  }
 }
