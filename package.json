@@ -8,7 +8,8 @@
     "list-chatbots": "cross-var npx node ./chatbots/prompts/list-chatbots.js",
     "list-prompts": "cross-var npx node ./chatbots/prompts/list-prompts.js $npm_config_chatbot",
     "create-chatbot": "cross-var npx node ./chatbots/prompts/create-chatbot.js $npm_config_chatbot $npm_config_pronouns $npm_config_name1 $npm_config_name2",
-    "create-prompt": "cross-var npx node ./chatbots/prompts/create-prompt.js $npm_config_chatbot $npm_config_prompt"
+    "create-prompt": "cross-var npx node ./chatbots/prompts/create-prompt.js $npm_config_chatbot $npm_config_prompt",
+    "list-responses": "cross-var npx node ./chatbots/responses/list-responses.js $npm_config_chatbot $npm_config_prompt"
   },
   "repository": {
     "type": "git",

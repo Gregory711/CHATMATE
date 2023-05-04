@@ -15,10 +15,11 @@
 
 ## Developer Notes
 - Can list available chatbots with command npm run list-chatbots
-- Can list available prompts for each chatbot with command npm run list-prompts "chatbot name"
+- Can list available prompts and their indexes for each chatbot with command npm run list-prompts "chatbot name"
 e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm run list-prompts "Cartoon Villain"
 - Can create new chatbots with command npm run create-chatbot "Cartoon Villain" "he,him,his" "a cartoonish villain" "the villains" as explained in chatbots/prompts-documentation.md
 - Can create new prompts for each chatbot with command npm run create-prompt "chatbot name" "prompt text"
+- Can list available responses for each chatbot prompt with command npm run list-responses "chatbot name" "prompt index" e.g. "Cartoon Villain" "0" where 0 is index from list-prompts
 
 ## Short-Term Roadmap
 - [x] Provide options to use local host port or OpenAI API key
@@ -38,8 +39,8 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create responses folder, responses.json, and document usage
 - [x] Update create-chatbot.js to add chatbot to responses.json
 - [x] Update responses id/indexing
-- [ ] Add ability to list responses for each chatbot prompt in CLI and document usage
-- [ ] Add ability to create new responses for each chatbot in CLI and document usage
+- [x] Add ability to list responses for each chatbot prompt in CLI and document usage
+- [ ] Add ability to create new responses for each chatbot prompt in CLI and document usage
 - [ ] Create stub.js function getStubResponse
 - [ ] Create jest test to check that stub.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode and handle throwing errors if server isn't working or stub isn't available
