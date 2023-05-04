@@ -35,16 +35,17 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create chat.js function to return a random prompt for a given chatbot
 - [x] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
 - [x] Create jest test to check that chat.js function works
-- [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or throw error that server isn't working and stub isn't available
-- [ ] Create jest test to check that getResponse function works
-- [ ] Create responses folder and metadata file for stubs and document usage
+- [ ] Create responses folder, metadata file for stubs, responses.json, and document usage
 - [ ] Create npm CLI to list chatbots in response file and document usage
 - [ ] Add ability to list responses for each chatbot in CLI and document usage
 - [ ] Add ability to upload responses for each chatbot in CLI and document usage
-- [ ] Create stub.js function getStubResponse and add to chat.js getResponse instead of throwing error
+- [ ] Create stub.js function getStubResponse
 - [ ] Create jest test to check that stub.js function works
+- [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode and handle throwing errors if server isn't working or stub isn't available
+- [ ] Create jest test to check that getResponse function works
+- [ ] Call getResponse function from board-action.js for each move and console log result
+- [ ] Display chatbot messages on webpage
 - [ ] Add user interface element to choose chatbot personality
-- [ ] Display chatbot messages
 - [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots
 - [ ] Make prompts 2d arrays with different subarrays for different move types and document this
