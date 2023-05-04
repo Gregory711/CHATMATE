@@ -36,9 +36,9 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
 - [x] Create jest test to check that chat.js function works
 - [x] Create responses folder, responses.json, and document usage
-- [ ] Update create-chatbot.js to add chatbot to responses.json
+- [x] Update create-chatbot.js to add chatbot to responses.json
 - [ ] Update create-prompt.js to add ids when creating prompts
-- [ ] Add ability to list responses for each chatbot in CLI and document usage
+- [ ] Add ability to list responses for each chatbot prompt in CLI and document usage
 - [ ] Add ability to create new responses for each chatbot in CLI and document usage
 - [ ] Create stub.js function getStubResponse
 - [ ] Create jest test to check that stub.js function works
