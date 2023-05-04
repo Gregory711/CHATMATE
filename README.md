@@ -35,10 +35,11 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create chat.js function to return a random prompt for a given chatbot
 - [x] Create chat.js function to use Local Storage chatbot selection or "Cartoon Villain" if none set and return result from calling getPrompt
 - [x] Create jest test to check that chat.js function works
-- [ ] Create responses folder, metadata file for stubs, responses.json, and document usage
-- [ ] Create npm CLI to list chatbots in response file and document usage
+- [x] Create responses folder, responses.json, and document usage
+- [ ] Update create-chatbot.js to add chatbot to responses.json
+- [ ] Update create-prompt.js to add ids when creating prompts
 - [ ] Add ability to list responses for each chatbot in CLI and document usage
-- [ ] Add ability to upload responses for each chatbot in CLI and document usage
+- [ ] Add ability to create new responses for each chatbot in CLI and document usage
 - [ ] Create stub.js function getStubResponse
 - [ ] Create jest test to check that stub.js function works
 - [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode and handle throwing errors if server isn't working or stub isn't available
