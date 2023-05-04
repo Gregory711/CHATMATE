@@ -22,5 +22,5 @@ fs.writeFileSync('./chatbots/prompts/prompts.json', JSON.stringify(prompts));
 
 // Create the new chatbot responses array
 const responses = JSON.parse(fs.readFileSync('./chatbots/responses/responses.json'));
-responses[chatbot[0]] = {};
+responses[chatbot[0]] = [];
 fs.writeFileSync('./chatbots/responses/responses.json', JSON.stringify(responses));

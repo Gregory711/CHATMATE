@@ -37,7 +37,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create jest test to check that chat.js function works
 - [x] Create responses folder, responses.json, and document usage
 - [x] Update create-chatbot.js to add chatbot to responses.json
-- [ ] Update create-prompt.js to add ids when creating prompts
+- [x] Update responses id/indexing
 - [ ] Add ability to list responses for each chatbot prompt in CLI and document usage
 - [ ] Add ability to create new responses for each chatbot in CLI and document usage
 - [ ] Create stub.js function getStubResponse
