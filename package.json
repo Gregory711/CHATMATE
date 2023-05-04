@@ -4,7 +4,7 @@
   "description": "The goal of this project is to let users play chess against chatbots with unique personalities powered by modern large language models",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "list-chatbots": "cross-var npx node ./chatbots/prompts/list-chatbots.js",
     "list-prompts": "cross-var npx node ./chatbots/prompts/list-prompts.js $npm_config_chatbot",
     "create-chatbot": "cross-var npx node ./chatbots/prompts/create-chatbot.js $npm_config_chatbot $npm_config_pronouns $npm_config_name1 $npm_config_name2",
@@ -28,6 +28,7 @@
   "type": "module",
   "devDependencies": {
     "jest": "^29.5.0",
-    "jest-localstorage-mock": "^2.4.26"
+    "jest-localstorage-mock": "^2.4.26",
+    "ts-jest": "^29.1.0"
   }
 }
