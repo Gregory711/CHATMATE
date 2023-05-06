@@ -1,6 +1,5 @@
-The prompts/metadata.json file contains a 2d array containing information about the chatbot prompt files.
-Each subarray contains the following information:
-- The chatbot name e.g. Cartoon Villain
+The prompts/metadata.json file contains a json object containing information about the chatbot prompt files.
+The object contains key value pairs where the key is the chatbot name and the value is an array containing the following information:
 - The chatbot's pronouns array size 3 e.g. ["he", "him", "his"]
 - The chatbot: BLANK is playing a game of chess name e.g. a cartoonish villain
 - The chatbot: Write BLANK short mocking response e.g. the villains

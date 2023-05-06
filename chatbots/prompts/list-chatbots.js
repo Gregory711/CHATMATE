@@ -4,6 +4,6 @@ import fs from 'fs';
 const metadata = JSON.parse(fs.readFileSync('./chatbots/prompts/metadata.json'));
 
 // Iterate over the chatbots and print their names
-for (const chatbot of metadata) {
-    console.log(chatbot[0]);
+for (const chatbot in metadata) {
+    console.log(chatbot);
 }
