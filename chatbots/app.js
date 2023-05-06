@@ -1,9 +1,10 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-require("dotenv").config();
+import dotenv from 'dotenv';
+dotenv.config();
 const port = process.env.CHATBOTSPORT || 3000;
 const mode = process.env.MODE || 'stub';
-const request = require('request');
+import request from 'request';
 const max_tokens = 50;
 
 app.listen(port, () => {
@@ -77,12 +78,13 @@ app.get('/mode', (req, res) => {
     res.send({mode});
 });
 
-app.get('/test', async (req, res) => {
+// Returns a response from the chatbot
+app.get('/chat', async (req, res) => {
     try {
-        const message = await chat("If I have one apple and you have two apples, how many apples do we have together?");
-        console.log(message);
-        res.send(message);
+        const message = await chat(req.query.message);
+        res.send({message});
     } catch (error) {
-        res.send(500, error);
+        console.log("Error: " + error);
+        res.status(500).send(error);
     }
 });
