@@ -44,7 +44,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Add ability to create new responses for each chatbot prompt in CLI and document usage
 - [x] Create stub.js function getStubResponse
 - [ ] Create jest test to check that stub.js function works
-- [ ] Create getResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode and handle throwing errors if server isn't working or stub isn't available
+- [x] Create getChatbotResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode
 - [ ] Create jest test to check that getResponse function works
 - [ ] Call getResponse function from board-action.js for each move and console log result
 - [ ] Display chatbot messages on webpage
