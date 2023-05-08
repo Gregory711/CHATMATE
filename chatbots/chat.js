@@ -1,7 +1,7 @@
 // Import all the prompts
 import prompts from '../chatbots/prompts/prompts.json' assert { type: "json" };
 import metadata from '../chatbots/prompts/metadata.json' assert { type: "json" };
-import { getStubResponse } from './responses/stub';
+import { getStubResponse } from './responses/stub.js';
 
 const CHATBOTSPORT = 3000;
 
