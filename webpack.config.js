@@ -13,7 +13,7 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, '../dist'),
 		library: {
-			type: "commonjs"
+			type: "module"
 		},
 		filename: 'bundle.js'
 	}
