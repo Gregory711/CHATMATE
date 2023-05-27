@@ -1,11 +1,13 @@
 import express from 'express';
 const app = express();
+import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 const port = process.env.CHATBOTSPORT || 3000;
 const mode = process.env.MODE || 'stub';
 import request from 'request';
 const max_tokens = 50;
+app.use(cors());
 
 app.listen(port, () => {
     console.log(`Chatbots server listening on port ${port}`);
