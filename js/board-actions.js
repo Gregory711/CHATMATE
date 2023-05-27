@@ -111,9 +111,9 @@ async function opponentTurn() {
   }
   // Use fen states to determine move type e.g. capture, else quiet move if nothing else
   localStorage.setItem('moveType', 'quiet');
-  console.log('Attempting to use chat.js to get a response from the chatbot');
+  // Attempting to get chatbot response and update webpage
   var response = await module.Chat.getChatbotResponse();
-  console.log(response);
+  $('#chatbot-response').text(response);
   console.log('Opponent turn.');
 
   stopTimer();

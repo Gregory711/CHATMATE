@@ -48,7 +48,7 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [x] Create getChatbotResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode
 - [ ] Create jest test to check that getResponse function works
 - [x] Call getResponse function from board-action.js for each user move and console log result
-- [ ] Display chatbot messages on webpage
+- [x] Display chatbot messages on webpage
 - [ ] Add user interface element to choose chatbot personality
 - [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots

@@ -73,6 +73,10 @@
   background-image: url('../img/icons/settings.svg');
 }
 
+#chatbot-response {
+  color: white;
+}
+
 /* main styles */
 
 .buttons > button {
