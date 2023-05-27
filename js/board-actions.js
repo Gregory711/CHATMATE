@@ -101,7 +101,7 @@ function loadBoard(fen, fromHistory = false) {
 
 // make opponent turn
 
-function opponentTurn() {
+async function opponentTurn() {
 
   localStorage.setItem('userTurn', game.fen());
   localStorage.setItem('whoseTurn', 'user');
@@ -111,6 +111,9 @@ function opponentTurn() {
   }
   // Use fen states to determine move type e.g. capture, else quiet move if nothing else
   localStorage.setItem('moveType', 'quiet');
+  console.log('Attempting to use chat.js to get a response from the chatbot');
+  var response = await module.Chat.getChatbotResponse();
+  console.log(response);
   console.log('Opponent turn.');
 
   stopTimer();

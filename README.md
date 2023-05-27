@@ -47,13 +47,14 @@ e.g. if Cartoon Villain name printed from npm run list-chatbots then can run npm
 - [ ] Create jest test to check that stub.js function works
 - [x] Create getChatbotResponse function in chat.js to use getPrompt function to get prompt and use prompt to get response from local host or OpenAI or stub based on getMode
 - [ ] Create jest test to check that getResponse function works
-- [ ] Call getResponse function from board-action.js for each move and console log result
+- [x] Call getResponse function from board-action.js for each user move and console log result
 - [ ] Display chatbot messages on webpage
 - [ ] Add user interface element to choose chatbot personality
 - [ ] Fix bug where user and chatbot are mixed up when user toggles to play black instead of white
 - [ ] Add documented process to create chatbots
 - [ ] Make prompts 2d arrays with different subarrays for different move types and document this
 - [ ] Add other move types e.g. capture, check, checkmate, etc
+- [ ] Add another dimension for prompts for when the chatbot makes a move
 
 ## Long-Term Goals
 - [ ] Allow users to message the chatbots directly
