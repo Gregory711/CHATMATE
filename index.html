@@ -155,7 +155,11 @@
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="dist/bundle.js" type="module"></script>
+    <script type="module">
+        import { Chat } from './dist/bundle.js';
+        window.module = {};
+        module.Chat = Chat;
+    </script>
     <script src="js/chess.min.js"></script>
     <script src="js/ltpgnviewer.js"></script>
 
